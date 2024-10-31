@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Trading Journal Documentation</header>
+        <article id="nav-links">
+        <a class="nav-link" href="#Project_Overview">Project Overview</a>
+        <a class="nav-link" href="#Installation">Installation</a>
+        <a class="nav-link" href="#API_Documentation">API Documentation</a>
+        <a class="nav-link" href="#Future_Enhancements">Future Enhancements</a>
+        <a class="nav-link" href="#Contributors">Contributors</a>
+        </article>
+      </nav>
+      <section class="main-section" id="Project_Overview">
+        <header>Project Overview</header>
+        <p>The Trading Journal application is designed to help users manage and track their trades and associated issues. This system enables efficient record-keeping of trading activities, supporting detailed trade data and optional issue descriptions for each trade. With a structured approach to tracking, it provides users with valuable insights for refining trading strategies over time.</p>
+        <h4>Tech Stack</h4>
+     <p>Frontend: Typescript and React</p>
+     <p>Backend: Java with Spring Boot</p>
+     <p>Database: PostgreSQL</p>
+      </section>
+      <section class="main-section" id="Installation">
+        <header>Installation</header>
+        <h4>Prerequisites:</h4>
+        <p>Java for backend.</p>
+        <p>Node.js and npm for frontend.</p>
+        <p>PostgreSQL for database management.</p>
+        <h4>Setting it up:</h4>
+        <li> Clone the repository:</li>
+      <li class="install-code"><code>git clone https://github.com/Y-Negash/Trading_Journal.git<br/>
+      cd Trading_Journal</code></li>
+      <li>Backend Setup:</li>
+      <li class="install-backend">Navigate to the backend folder and install dependencies.</li>
+      <li class="install-backend">Ensure the database URL, username, and password are correctly set in the application properties file.</li>
+      <li> Frontend Setup:</li>
+      <li class="install-frontend">Navigate to the frontend folder and install dependencies using <code>npm install</code></li>
+      <li class="install-frontend">Start development server using <code>npm start</code></li>
+      </section>
+      <section class="main-section" id="API_Documentation">
+        <header>API Documentation</header>
+          <h4>Trade Endpoints</h4>
+          <li class="endpoints">
+            <code>/trades</code> - Get all trades (<code>GET</code> method)
+          </li>
+          <li class="endpoints">
+            <code>/trades/{id}</code> - Get trades by id (<code>GET</code> method)
+          </li>
+          <li class="endpoints">
+            <code>/trades</code> - Create trades (<code>POST</code> method)
+          </li>
+          <h4>Issue Endpoints</h4>
+          <li class="endpoints">
+            /issues/date/{tradeDate}Get issues by date (<code>GET</code> method)
+          </li>
+          <li class="endpoints">
+            <code>/issues</code> - Add issue to trade (<code>POST</code> method)
+          </li>
+      </section>
+      <section class="main-section" id="Future_Enhancements">
+        <header>Future Enhancements</header>
+        <p>Data Analysis: Implementing statistics or performance metrics on trades.</p>
+        <p>User Authentication: Restricting access to authenticated users.</p>
+      </section>
+      <section class="main-section" id="Contributors">
+        <header>Contributors</header>
+        <p>Yeabsira Negash</p>
+      </section>
+    </main>
+  </body>
+</html>

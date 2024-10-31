@@ -1,0 +1,67 @@
+body {
+    font-family: Tahoma;
+    background-color: rgba(255, 231, 164, 0.556);
+    
+  }
+  
+  #navbar > header {
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  #nav-links {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  @media screen and (max-width: 773px){
+    #nav-links{
+      display:flex;
+      flex-direction: column;
+    }
+  }
+  
+  #navbar{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    background-color: rgb(253, 235, 183);
+    border: 2px solid black;
+  }
+  
+  .nav-link{
+    padding: 0.4rem;
+    font-size: 16px;
+  }
+  
+  header {
+    font-size: x-large;
+  }
+  
+  .main-section{
+    scroll-margin-top: 125px; 
+  }
+  
+  
+  .install-code,.install-backend, .install-frontend {
+    list-style: none;
+    padding-left: 20px;
+    margin: 1rem;
+  }
+  
+  
+  #API_Documentation, #Future_Enhancements, #Contributors{
+    padding-top: 1rem;
+  }
+  
+  .endpoints {
+    padding: 1rem;
+  }
+  
+  code {
+    font-size: large;
+  }
